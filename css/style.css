@@ -1050,7 +1050,6 @@ a {
 		flex-direction: column;
 		padding: 10px 0 !important;
 		background: transparent;
-		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 		width: 90% !important;
 	}
 }
@@ -1118,13 +1117,14 @@ a {
 }
 
 .card-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex-grow: 1;
-	flex: 1 1 auto;
-	background: #ffffffa3;
-	border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex: 1 1 auto;
+    background: #ffffffa3;
+    border-radius: 24px;
+    padding: 40px;
 }
 
 .img-area {
@@ -1167,7 +1167,6 @@ a {
 	padding: 10px 45px;
 	background: transparent;
 	width: 500px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .sectionContatoContainer h2 {
@@ -1195,6 +1194,7 @@ a {
 	margin-bottom: 20px;
 	font-size: 15px;
 	transition: all 0.5s;
+	border-radius: 30px;
 }
 
 .formularioContato input:focus {
@@ -1208,6 +1208,7 @@ a {
 	font-size: 15px;
 	margin-bottom: 30px;
 	transition: all 0.5s;
+	border-radius: 30px;
 }
 
 .formularioContato textarea:focus {
@@ -1223,6 +1224,7 @@ a {
 	color: #f5f5f5;
 	transition: all 1s;
 	margin-bottom: 20px;
+	border-radius: 30px;
 }
 
 .formularioContato button:hover {
