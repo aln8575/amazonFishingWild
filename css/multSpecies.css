@@ -123,11 +123,11 @@ body {
   left: 0;
   width: 100%;
   height: calc(100% + 15rem);
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
       rgba(255, 255, 255, 0),
       var(--primary-color)
     ),
-    url("/assets/rioGuariba.png");
+    url("/assets/rioGuariba.png"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
