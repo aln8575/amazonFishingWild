@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
 
 :root {
+  --for-color: #0c270a;
   --primary-color: #0a1e27;
   --secondary-color: #e9c675;
   --three-color: #0c270a;
@@ -440,16 +441,17 @@ nav {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  flex-direction: column !important;
 }
 
 .modal-content {
-  padding: 5%;
+  padding: 0%;
   border-radius: 5px;
   text-align: center;
   max-width: 100%;
-  width: 80%;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--primary-color) 2rem);
-  height: 80%;
+  width: 70%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--for-color) 2rem);
+  height: 90%;
   overflow-y: scroll;
 }
 
@@ -503,6 +505,59 @@ nav {
   width: 30%;
   margin: 10px;
 }
+
+.imgContainerModalVideo{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.videoModal {
+  max-width: 560px; /* Ajusta para vídeos do YouTube */
+}
+
+.imgModal {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.videoModal {
+  width: 45%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* 
+.imgContainerModal{
+  position:relative;
+  display:inline-block;
+  margin:2rem 1rem;
+  width:100px;
+  height:100px;
+  border-radius:5px;
+  background-color:#EEE;
+  box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+} */
+
+.imgContainerModalVideo:after{
+  content:"";
+  /* position:absolute; */
+  width:100%;
+  height:100%;
+  /* background-color:#0CF; */
+  opacity:0;
+  border-radius:5px;
+  box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+}
+
 
 .imgContainerModal{
   display: flex;
@@ -682,15 +737,15 @@ nav {
 }
 
 video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  position: relative;
+  /* top: 50%; */
+  /* left: 50%; */
+  min-width: 70%;
+  min-height: 49%;
+  /* width: 100px; */
+  /* height: 100%; */
   z-index: 1;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   object-fit: cover;
 }
 

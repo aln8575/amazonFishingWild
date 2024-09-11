@@ -31,6 +31,7 @@
 	border-right: 2px solid #01fe87;
 	overflow: hidden;
 	animation: animate 6s linear infinite;
+	font-family: var(--header-font);
 }
 
 
@@ -67,6 +68,7 @@
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-top: 25px;
+	font-family: var(--header-font);
 }
 
 .carousel-caption p {
@@ -78,13 +80,13 @@
 
 .carousel-inner:before {
 	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0 0 0 / 40%);
+    z-index: 1;
 }
 
 .navbar .getstarted {
@@ -163,9 +165,9 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.carousel-caption {
+	/* .carousel-caption {
 		bottom: 370px;
-	}
+	} */
 
 	.carousel-caption p {
 		width: 100%;
@@ -377,17 +379,12 @@ p.lead {
         flex: 0 0 33%;
         max-width: 100%;
     }
-
-    .img-fluid {
-        width: 180px; /* Ajuste específico para tablets */
-        height: 180px;
-    }
 }
 
 /* Ajuste para telas grandes (desktop) */
 @media (min-width: 992px) {
     .img-fluid {
-        width: 203px; /* Ajuste para desktops */
+        width: 250px; /* Ajuste para desktops */
         height: 194px;
     }
 }
@@ -400,7 +397,7 @@ p.lead {
 .servicesProjects {
 	margin-top: 69px;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url('/assets/florestaName.jpg');
+		url('/assets/bannerServicos.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1068,6 +1065,7 @@ a {
 	cursor: pointer;
 }
 
+
 .contact__cardd span {
 	margin-bottom: 1rem;
 	font-size: 2rem;
@@ -1080,6 +1078,13 @@ a {
 
 .textContato:hover {
 	color: #f49e09;
+}
+
+.textContatoWpp{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: var(--header-font);
 }
 
 .contatoUs {
@@ -1180,6 +1185,70 @@ a {
 	flex-direction: column;
 	width: 100%;
 }
+
+.heading{
+	text-align: center;
+	padding:2.5rem 0
+  }
+  
+  .heading span{
+	font-size: 3.5rem;
+    background: rgb(255 165 0 / 60%);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+  }
+  
+  .heading span.space{
+	background:none;
+  }
+
+  
+.sectionContatoContainerr .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+  }
+  
+  .sectionContatoContainerr .row .image{
+    flex:1 1 35rem;
+  }
+  
+  .sectionContatoContainerr .row .image img{
+    width:100%;
+  }
+  
+  .sectionContatoContainerr .row form{
+    flex: 1 1 35rem;
+    padding: 0rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sectionContatoContainerr .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .sectionContatoContainerr .row form .inputBox input, .contact .row form textarea{
+    width:49%;
+    margin:1rem 0;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    background:#f7f7f7;
+    text-transform: none;
+  }
+  
+  .sectionContatoContainerr .row form textarea{
+    height: 15rem;
+    resize: none;
+    width:100%;
+  }
 
 .formularioContato label {
 	color: #f5f5f5;
@@ -1326,4 +1395,15 @@ video {
 		flex-direction: column;
 		text-align: center;
 	}
+}
+
+.icon {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #4caf50; /* Cor de destaque ao passar o mouse */
 }
