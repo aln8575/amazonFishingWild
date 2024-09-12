@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="/css/stylesExploratory.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Exploratory</title>
 </head>
 
@@ -23,9 +24,6 @@
         </div>
         <ul class="nav__links" id="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">About</a></li>
-          <li><a href="index.html">Services</a></li>
-          <li><a href="index.html">Gallery</a></li>
           <li><a href="index.html">Contact</a></li>
         </ul>
       </div>
@@ -42,27 +40,26 @@
             Scroll down
             <span><i class="ri-arrow-down-line"></i></span>
           </a>
-        </div>
-
-      </div>
       <div class="header__socials">
         <span>Follow us</span>
-        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.instagram.com/fishingwell_afw/"><i class="ri-instagram-line"></i></a>
+        <a href="https://wa.me/+559294946453" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a> 
         <!-- <a href="#"><i class="ri-twitter-fill"></i></a> -->
       </div>
     </div>
   </header>
+
   <section class="about">
     <div class="section__container about__container">
       <!-- Primeiro Bloco -->
       <div class="about__image about__image-1" id="about">
-        <img src="/assets/peixeGaleria4.JPG" alt="about" />
+        <img src="/assets/explorator.JPG" alt="about" />
       </div>
       <div class="about__content about__content-1">
         <h3 class="section__subheader">GET STARTED</h3>
         <h2 class="section__header">How our exploratory trip works</h2>
         <p class="textAboutExploratory">A Journey into a Treasure Trove of Nature’s Wonders</p>
-        <label for="modal-toggle-1" class="modal-button" onclick="openModal('modal-1')">Read more
+        <label for="modal-toggle-1" class="button_slide slide_right" onclick="openModal('modal-1')">Read more
           <span><i class="ri-arrow-right-line"></i></span>
         </label>
         <div class="modal" id="modal-1">
@@ -79,18 +76,27 @@
               driving our passion for exploration. Group size on our exploratory trips is limited to 8 anglers.
             </p>
             <div class="imgContainerModal">
-              <img src="/assets/peixeGaleria1.jpeg" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria2.jpeg" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria3.JPG" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria4.JPG" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria6.JPG" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria7.jpeg" class="imgModal" alt="">
+              <img src="/assets/ave.jpeg" class="imgModal" alt="">
+              <img src="/assets/passaro.JPG" class="imgModal" alt="">
+              <img src="/assets/lago.JPG" class="imgModal" alt="">
+              <video autoplay muted class="imgModal" controls>
+                <source src="videos/monkey.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <video autoplay muted class="imgModal" controls>
+                <source src="videos/imglontra.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <video autoplay muted class="imgModal" controls>
+                <source src="videos/lagodois.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
             <span class="close-button" onclick="closeModal('modal-1')">Close</span>
           </div>
         </div>
       </div>
-  
+
       <!-- Segundo Bloco -->
       <div class="about__image about__image-2" id="equipment">
         <img src="/assets/bannerTerceiroProdutoTent.jpg" alt="about" />
@@ -117,53 +123,54 @@
               and plumbing systems are put in place on our arrival in a region. This lets us implement an
               array of refrigerators, freezers and all of the infrastructure necessary to ensure your comfort
               and security in the middle of Nature’s most spectacular wilderness.</p>
+
               <div class="imgContainerModal">
                 <img src="/assets/exploratoryGallery.jpg" class="imgModal" alt="">
                 <img src="/assets/exploratoryGallery2.jpg" class="imgModal" alt="">
                 <img src="/assets/exploratoryGallery3.JPG" class="imgModal" alt="">
-                <img src="/assets/peixeGaleria4.JPG" class="imgModal" alt="">
-                <img src="/assets/peixeGaleria6.JPG" class="imgModal" alt="">
-                <img src="/assets/peixeGaleria7.jpeg" class="imgModal" alt="">
               </div>
-            <span class="close-button" onclick="closeModal('modal-2')">Close</span>
           </div>
+          <span class="close-button" onclick="closeModal('modal-2')">Close</span>
         </div>
       </div>
-  
+
       <!-- Terceiro Bloco -->
       <div class="about__image about__image-3" id="blog">
-        <img src="/assets/planeCardProduct.jpg" alt="about" />
+        <img src="/assets/logoItinenario.jpeg" alt="about" />
       </div>
       <div class="about__content about__content-3">
-        <h3 class="section__subheader">WHERE YOU GO IS THE KEY</h3>
+        <h3 class="section__subheader">ITINERARY</h3>
         <h2 class="section__header">Itinerary / General Information</h2>
-        <p>International travel Arrival in Manaus. After clearing customs, our transfer guide will meet you...</p>
+        <p>Departure & Travel - Depending on your departure city, leave home in time to connect with a late afternoon
+          International flight
+          from Miami to Manaus Brazil.</p>
         <label for="modal-toggle-3" class="button_slide slide_right" onclick="openModal('modal-3')">Read more
           <span><i class="ri-arrow-right-line"></i></span>
         </label>
         <div class="modal" id="modal-3">
           <div class="modal-content">
-            <h2 class="tituloModal">A Journey into a Treasure Trove of Nature’s Wonders</h2>
-            <p class="textAboutExploratory">- Day 1 – transfer to exploratory camp
-              Board our chartered floatplane and arrive at our remote Exploratory camp. You´ll receive a
-              thorough camp orientation, then relax and enjoy lunch. Unpack and get ready for an amazing
-              Amazon Adventure.<br>
+            <h2 class="tituloModal">ITINERARY MULTI-SPECIES VARIETY TRIP</h2>
+            <p class="textAboutExploratory">- Transfer day & Day 1
+              Arrive Manaus, Brazil. After clearing customs you will be met by our agent and transferred to the Hotel
+              The next morning, you will be transferred to the airport to board a float plane directly to the Rio
+              guariba.-
+              Relax, enjoy lunch and get your gear ready for an afternoon of fishing.
+              <br>
               - Day 2 – Through Day 7
-              Six full days of fishing. Your angling day begins with a 5:30 AM wake up call, followed by a hearty
-              breakfast at 6:00 AM. Your guide Will be ready to depart at first light, although you can always
-              choose to sleep-in at your leisure. Relax for an hour at lunchtime each day. Return to the lodge
-              before dark for appetizers, drinks and bragging, followed by a delicious dinner.
-              Jungle hikes and spotlighting trips can be arranged, location dependent.<br>
-              - Day 8
-              Take the floatplane back to Manaus. Our transfer agent will meet you and transport you to the
-              airport to depart Manaus via your International flight.</p>
+              Six full days of fishing. Your angling day begins with a 5:30 AM followed by breakfast at 6:00 AM. Your
+              guide will be ready to depart at first light. Return to camp by dusk for appetizers, drinks and bragging,
+              followed by a delicious dinner. Jungle hikes, spotlighting trips and bird watching can be arranged.
+              <br>
+              Travel day & Return
+              10 AM, take floatplane back to Manaus, arriving late morning. You will be provided with a day room at
+              the Hotel and you will have a day and evening in Manaus for relaxing. enjoy great Brazilian restaurants.
+              Late evening, transfer to airport. Depart Ma-naus via International flight for home.
+
+            </p>
             <div class="imgContainerModal">
-              <img src="/assets/peixeGaleria1.jpeg" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria2.jpeg" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria3.JPG" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria4.JPG" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria6.JPG" class="imgModal" alt="">
-              <img src="/assets/peixeGaleria7.jpeg" class="imgModal" alt="">
+              <img src="/assets/logoItinenario.jpeg" class="imgModal" alt="">
+              <img src="/assets/peoples.jpg" class="imgModal" alt="">
+              <img src="/assets/plane.JPG" class="imgModal" alt="">
             </div>
             <span class="close-button" onclick="closeModal('modal-3')">Close</span>
           </div>
@@ -171,15 +178,15 @@
       </div>
     </div>
   </section>
-  
-  
-  
+
+
+
 
   <footer class="footer">
     <div class="section__container footer__container">
       <div class="footer__col">
         <div class="logo footer__logo">
-          <a href="index.html">Fishing Wild Adventures</a>
+          <a href="index.html">Amazon Fishing Wild</a>
         </div>
         <p>
           Organize your EXPLORATORY fishing trip with Wellington Melo’s “Fishing Wild”
@@ -188,12 +195,12 @@
       <div class="footer__col">
         <h4>More on The Blog</h4>
         <ul class="footer__links">
-          <li><a href="#">About Fishing Wild Adventures</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="index.html">About Amazon Fishing Wild</a></li>
+          <li><a href="https://wa.me/+559294946453">Contact Us</a></li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
-     
+
     </div>
     <div class="footer__bar">
       Copyright © 2024 Web Design Mastery. All rights reserved.
@@ -202,7 +209,7 @@
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="/js/mainExploratory.js"></script>
-  <script src="/js/exploratoryModal.js"></script>
+  <script src="/js/multSpeciesModal.js"></script>
 </body>
 
 </html>

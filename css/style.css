@@ -334,11 +334,29 @@
     width: 150px; /* Ajustável para telas menores */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .img-fluid {
         width: 203px; /* Ajuste para tablets e acima */
         height: 194px;
     }
+
+	.aboutSobre {
+		margin-bottom: 40px;
+		height: 100%;
+	}
+
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-grow: 1;
+		flex: 1 1 auto;
+		background: #ffffffa3;
+		border-radius: 24px;
+		padding: 0px!important;
+		width: 230px;
+}
+
 }
 
 .card {
@@ -934,10 +952,16 @@ a {
 
 .footer__bar {
 	padding: 1rem;
-	text-align: center;
-	font-size: 0.8rem;
-	border-top: 1px solid var(--extra-light);
-	color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid var(--extra-light);
+    color: white;
+    gap: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 @media (width < 900px) {
@@ -1129,7 +1153,7 @@ a {
     flex: 1 1 auto;
     background: #ffffffa3;
     border-radius: 24px;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 .img-area {
@@ -1346,6 +1370,12 @@ video {
 
 	.navbar-nav {
 		text-align: center;
+        background: #ffffff5c;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 352px;
+        margin-top: -209px;
 	}
 
 	.navbar-brand {

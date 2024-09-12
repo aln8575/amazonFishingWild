@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
 
 :root {
+  --for-color: #0c270a;
   --primary-color: #0a1e27;
-  --secondary-color: #e9c675;
+  --secondary-color: #ffffff;
   --three-color: #f8973a;
   --text-light: #cbd5e1;
   --white: #ffffff;
@@ -122,11 +123,11 @@ body {
   left: 0;
   width: 100%;
   height: calc(100% + 15rem);
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
       rgba(255, 255, 255, 0),
       var(--primary-color)
-    ),  
-    url("/assets/img/exploratoryBanner.jpg");
+    ),
+    url("/assets/rioGuariba.png"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -260,8 +261,8 @@ nav {
 .about {
   background-image: linear-gradient(
     to bottom,
-    rgba(248, 150, 58, 0),
-    var(--three-color) 15rem
+    rgba(255, 255, 255, 0),
+    var(--three-color) 8rem
   );
   overflow: hidden;
 }
@@ -274,15 +275,10 @@ nav {
 }
 
 .about__image img {
-  /* max-width: 400px;
+  max-width: 316px;
+  height: 312px;
   margin-inline: auto;
-  border-radius: 5px;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4); */
-
-  max-width: 430px;
-  height: 370px;
-  margin-inline: auto;
-  border-radius: 5px;
+  border-radius: 190px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
 }
 
@@ -391,7 +387,7 @@ nav {
   }
 
   .header__container {
-    height: calc(100% - 10rem);
+    height: calc(100% - 0rem);
   }
 
   .header__socials {
@@ -422,8 +418,8 @@ nav {
 }
 
 .imgLogo{
-	border-radius: 240px;
-    width: 15%;
+  border-radius: 240px;
+  width: 32%;
 }
 
 :root {
@@ -445,17 +441,31 @@ nav {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  flex-direction: column !important;
 }
 
 .modal-content {
-  padding: 5%;
+  padding: 0%;
   border-radius: 5px;
   text-align: center;
   max-width: 100%;
-  width: 80%;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--primary-color) 2rem);
-  height: 80%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--three-color) 2rem);
+  height: 90%;
   overflow-y: scroll;
+}
+
+@media (min-width: 1024px){
+  .modal-content {
+    padding: 0%;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 100%;
+    width: 70%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--three-color) 2rem);
+    height: 90%;
+    overflow-y: scroll;
+  }
 }
 
 .modal-content::-webkit-scrollbar{
@@ -475,21 +485,235 @@ nav {
 
 
 .modal-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    color: #ffffff;
-    background: black;
-    transition: transform 0.3s ease, background 0.3s ease;
+  padding: 10px 20px;
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--secondary-color);
 }
 
-.modal-button:hover {
-    transform: scale(1.1);
-    background: #333333; /* Muda a cor de fundo para um tom de cinza mais claro ao passar o mouse */
+.close-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #e9c675c0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
 }
 
+
+.tituloModal{
+  color: var(--white);
+  margin: 15px;
+}
+
+.imgModal{
+  width: 30%;
+  margin: 10px;
+}
+
+.imgContainerModalVideo{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.videoModal {
+  max-width: 560px; /* Ajusta para vídeos do YouTube */
+}
+
+.imgModal {
+  width: 100%;
+  max-width: 344px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.videoModal {
+  width: 45%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* 
+.imgContainerModal{
+  position:relative;
+  display:inline-block;
+  margin:2rem 1rem;
+  width:100px;
+  height:100px;
+  border-radius:5px;
+  background-color:#EEE;
+  box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+} */
+
+.imgContainerModalVideo:after{
+  content:"";
+  /* position:absolute; */
+  width:100%;
+  height:100%;
+  /* background-color:#0CF; */
+  opacity:0;
+  border-radius:5px;
+  box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+}
+
+
+.imgContainerModal{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0px;
+  justify-content: center;
+  padding: 0px;
+  flex-direction: row;
+}
+/* 
+.imgContainerModal{
+  position:relative;
+  display:inline-block;
+  margin:2rem 1rem;
+  width:100px;
+  height:100px;
+  border-radius:5px;
+  background-color:#EEE;
+  box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+} */
+
+.imgContainerModal:after{
+  content:"";
+  /* position:absolute; */
+  width:100%;
+  height:100%;
+  /* background-color:#0CF; */
+  opacity:0;
+  border-radius:5px;
+  box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+}
+
+.imgModal:hover{
+  transform:scale(1.25,1.25);
+}
+
+.imgModal:hover::after{
+  opacity:1;
+}
+
+/* .textAboutExploratory{
+  color: var(--text-light);
+  
+} */
+
+.custom-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-modal-content {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+}
+
+.custom-close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  font-size: 18px;
+  background-color: #e9c675;
+  border: none;
+  color: #ffffff;
+  border-radius: 100px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  /* background: #000; */
+}
+
+.video-container iframe,
+.video-container video {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos do botão */
+.modal-button-custom {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #0c270a;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  letter-spacing: 1.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-button-custom:hover {
+  background-color: black;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-button-custom:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgb(255 255 255 / 23%);
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+  transition: all 1.75s ease;
+}
+
+.modal-button-custom:hover:before {
+  opacity: 1;
+  width: 400%;
+  height: 400%;
+}
 
 .button_slide {
   color: #FFF;
@@ -515,47 +739,6 @@ nav {
   box-shadow: inset 400px 0 0 0 #000000;
 }
 
-
-.close-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #e9c675c0;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-}
-
-
-.tituloModal{
-  color: var(--white);
-  margin: 15px;
-}
-
-.imgModal{
-  width: 30%;
-  /* height: 30%; */
-  margin: 10px;
-}
-
-.imgContainerModal{
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  margin: 0px;
-  justify-content: center;
-  padding: 0px;
-  flex-direction: row;
-}
-
-/* .textAboutExploratory{
-  color: var(--text-light);
-  
-} */
-
-
 .video-background {
   position: fixed;
   top: 0;
@@ -564,4 +747,35 @@ nav {
   height: 100%;
   overflow: hidden;
   z-index: -1;
+}
+
+.videoWatch{
+  position: absolute;
+  min-width: 70%;
+  min-height: 49%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: translate(0%, 0%);
+  object-fit: cover;
+}
+
+.profile-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Garante que a imagem seja redonda */
+  object-fit: cover; /* Ajusta a imagem para preencher o círculo sem distorcer */
+  z-index: 1; /* Coloca a imagem acima do design de fundo */
+}
+
+.textSobreConfortos{
+  color: white;
+  font-family: var(--header-font);
 }
