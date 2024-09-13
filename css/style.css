@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); */
-
-
 * {
 	margin: 0;
 	padding: 0;
@@ -14,25 +10,27 @@
 }
 
 .textoCriativo {
-	position: relative;
-	font-size: 2vw;
-	color: #ffffff;
-	-webkit-text-stroke: 0vw #383d52;
-	text-transform: uppercase;
+    position: relative;
+    font-size: 4vw; /* Mantido responsivo para diferentes larguras de tela */
+    color: #ffffff;
+    -webkit-text-stroke: 0.1vw #383d52; /* Ajustado para variação proporcional */
+    text-transform: uppercase;
 }
 
+
 .textoCriativo::before {
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	-webkit-text-stroke: 0vw #383d52;
-	border-right: 2px solid #01fe87;
-	overflow: hidden;
-	animation: animate 6s linear infinite;
-	font-family: var(--header-font);
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    -webkit-text-stroke: 0.1vw #383d52; /* Responsivo para telas menores */
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+    font-family: var(--header-font);
 }
+
 
 
 @keyframes animate {
@@ -64,19 +62,21 @@
 }
 
 .carousel-caption h5 {
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
-	font-family: var(--header-font);
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Ajustável para telas pequenas e grandes */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: var(--header-font);
 }
 
+
 .carousel-caption p {
-	width: 60%;
-	margin: auto;
-	font-size: 18px;
-	line-height: 1.9;
+    width: 80%; /* Ajustável para telas menores */
+    margin: auto;
+    font-size: 1rem; /* Tornado mais legível */
+    line-height: 1.6;
 }
+
 
 .carousel-inner:before {
 	content: '';
@@ -134,13 +134,14 @@
 }
 
 .navbar-toggler {
-	padding: 1px 2px;
-	font-size: 21px;
-	line-height: 0.3;
-	background: #fff;
-	position: absolute;
-	top: 20px;
+    padding: 1px 2px;
+    font-size: 21px;
+    line-height: 0.3;
+    background: #fff;
+    position: relative; /* Evitar sobreposição */
+    top: 10px; /* Ajustado para telas pequenas */
 }
+
 
 .portfolio .card {
 	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
@@ -159,11 +160,10 @@
 }
 
 .imgLogo {
-    border-radius: 240px;
-    width: 40%;
-    margin-top: 126px;
+    border-radius: 50%; /* Mantido responsivo e circular */
+    width: 30%; /* Ajustável para diferentes tamanhos de tela */
+    margin-top: 50px;
 }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	/* .carousel-caption {
 		bottom: 370px;
@@ -1145,9 +1145,7 @@ a {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
-	/* Faz com que os cards ocupem toda a altura disponível */
 	background-color: transparent;
-	/* Manter o fundo transparente */
 	padding: 20px;
 }
 
@@ -1159,31 +1157,20 @@ a {
     flex: 1 1 auto;
     background: #ffffffa3;
     border-radius: 24px;
-    /* padding: 40px; */
 }
 
 .img-area {
 	flex-shrink: 0;
-	/* Impede que a imagem seja redimensionada */
 	margin-bottom: 20px;
-	/* Espaçamento entre a imagem e o restante do conteúdo */
 }
-
-/* 
-.card-title {
-    margin-top: 15px;
-    margin-bottom: 15px;
-} */
 
 .card p.lead {
 	flex-grow: 1;
-	/* Faz com que o parágrafo cresça para ajustar o tamanho do card */
 }
 
 .card a.btn {
 	margin-top: 20px;
 	align-self: center;
-	/* Centraliza o botão na parte inferior */
 }
 
 .containerUs {
@@ -1193,7 +1180,6 @@ a {
 }
 
 /* ------------------------------contato---------------------------------- */
-
 .sectionContatoContainer {
 	display: flex;
 	align-items: center;
@@ -1231,53 +1217,6 @@ a {
   
   .heading span.space{
 	background:none;
-  }
-
-  
-.sectionContatoContainerr .row{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    align-items: center;
-  }
-  
-  .sectionContatoContainerr .row .image{
-    flex:1 1 35rem;
-  }
-  
-  .sectionContatoContainerr .row .image img{
-    width:100%;
-  }
-  
-  .sectionContatoContainerr .row form{
-    flex: 1 1 35rem;
-    padding: 0rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
-    border-radius: 1.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .sectionContatoContainerr .row form .inputBox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .sectionContatoContainerr .row form .inputBox input, .contact .row form textarea{
-    width:49%;
-    margin:1rem 0;
-    padding:1rem;
-    font-size: 1.7rem;
-    color:#333;
-    background:#f7f7f7;
-    text-transform: none;
-  }
-  
-  .sectionContatoContainerr .row form textarea{
-    height: 15rem;
-    resize: none;
-    width:100%;
   }
 
 .formularioContato label {
@@ -1339,16 +1278,12 @@ a {
 	height: 218px;
 }
 
-
-
-/* Garante que todas as imagens e vídeos sejam fluidos e se adaptem ao tamanho do container */
 img,
 video {
 	max-width: 100%;
 	height: auto;
 }
 
-/* Ajustes específicos para o carousel para que o texto seja legível em dispositivos menores */
 .carousel-caption {
 	font-size: 1rem;
 	padding: 10px;
@@ -1367,7 +1302,6 @@ video {
 	}
 }
 
-/* Ajuste nas colunas para garantir que empilhem corretamente em telas pequenas */
 @media (max-width: 768px) {
 	.aboutSobre .about-text {
 		margin-top: 20px;
@@ -1402,25 +1336,21 @@ video {
 		margin: 0 auto;
 	}
 
-	/* Reduz o tamanho das cartas em dispositivos móveis */
 	.card {
 		margin: 0 auto;
 		width: 100%;
 	}
 
-	/* Botões responsivos */
 	.btn-warning {
 		font-size: 0.9rem;
 		padding: 10px 20px;
 	}
 
-	/* Ajuste de padding para sections */
 	.section__container {
 		padding: 20px;
 	}
 }
 
-/* Footer ajustes responsivos */
 @media (max-width: 576px) {
 	.footer__socials {
 		justify-content: center;
