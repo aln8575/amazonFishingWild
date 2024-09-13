@@ -6844,6 +6844,13 @@ fieldset:disabled .btn {
         max-height: 400px; /* Altura máxima reduzida para tablets */
     }
 
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 325px;
+    }
+
     .carousel-caption {
         bottom: 15%; /* Ajuste na posição da legenda em telas menores */
         font-size: 0.9rem; /* Texto um pouco menor em tablets */
@@ -6867,7 +6874,7 @@ fieldset:disabled .btn {
 /* Responsividade para celulares */
 @media (max-width: 576px) {
     .carousel-item img {
-        max-height: 438px; /* Altura máxima reduzida para celulares */
+        max-height: 365px; /* Altura máxima reduzida para celulares */
     }
 
     .carousel-caption {
@@ -6876,7 +6883,7 @@ fieldset:disabled .btn {
     }
 
     .carousel-item {
-        height: 50vh!important;
+        height: 53vh!important;
         min-height: 300px;
     }
 }

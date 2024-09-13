@@ -159,9 +159,9 @@
 }
 
 .imgLogo {
-	border-radius: 240px;
-	width: 31%;
-	margin-top: 79px;
+    border-radius: 240px;
+    width: 40%;
+    margin-top: 126px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -187,9 +187,9 @@
 		text-align: center;
 	}
 
-	.carousel-caption {
+	/* .carousel-caption {
 		bottom: 125px;
-	}
+	} */
 
 	.carousel-caption h5 {
 		font-size: 17px;
@@ -198,6 +198,12 @@
 	.carousel-caption a {
 		padding: 10px 15px;
 		font-size: 15px;
+	}
+
+	.imgLogo {
+        border-radius: 240px;
+        width: 34%;
+        margin-top: -16px;
 	}
 
 	.carousel-caption p {

@@ -149,20 +149,20 @@ nav {
 }
 
 .nav__links {
-  position: absolute;
+  position: static;
   right: 1rem;
   top: 68px;
   width: calc(100% - 2rem);
   max-width: 350px;
-  padding: 2rem;
+  padding: 0;
   list-style: none;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2rem;
   background-color: rgba(10, 30, 39, 0.8);
   border-radius: 10px;
-  display: none;
+  display: flex;
 }
 
 .nav__links.open {
@@ -363,6 +363,27 @@ nav {
   text-align: center;
 }
 
+@media only screen and (max-width: 767px) {
+	.imgLogo {
+        border-radius: 240px;
+        width: 69% !important;
+        display: flex !important;
+        margin-top: 0px;
+	}
+
+    .modal-content {
+    padding: 0%;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 100%;
+    width: 95% !important;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--for-color) 2rem);
+    height: 90%;
+    overflow-y: scroll;
+}
+}
+
+
 @media (width > 768px) {
   .nav__logo {
     flex: 1;
@@ -373,7 +394,7 @@ nav {
     padding: 0;
     display: flex;
     flex-direction: row;
-    background-color: transparent;
+    background-color: #0000001f;
   }
 
   .nav__menu__btn {
@@ -419,7 +440,8 @@ nav {
 
 .imgLogo{
 	border-radius: 240px;
-    width: 15%;
+  display: none;
+    width: 34%;
 }
 
 :root {
@@ -454,6 +476,8 @@ nav {
   height: 90%;
   overflow-y: scroll;
 }
+
+
 
 .modal-content::-webkit-scrollbar{
   width: 5px;
