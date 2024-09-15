@@ -6874,7 +6874,7 @@ fieldset:disabled .btn {
 /* Responsividade para celulares */
 @media (max-width: 576px) {
     .carousel-item img {
-        max-height: 365px; /* Altura máxima reduzida para celulares */
+        max-height: 315px; /* Altura máxima reduzida para celulares */
     }
 
     .carousel-caption {
