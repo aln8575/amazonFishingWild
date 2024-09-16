@@ -6815,11 +6815,6 @@ fieldset:disabled .btn {
     touch-action: pan-y
 }
 
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden
-}
 
 .carousel-inner::after {
     display: block;
@@ -6842,22 +6837,17 @@ fieldset:disabled .btn {
     background-attachment: fixed;
 }
 
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
 /* Responsividade para tablets */
 @media (max-width: 768px) {
     .carousel-item img {
-        max-height: 268px; /* Altura máxima reduzida para tablets */
-    }
-    
-    .carousel-inner {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        height: 325px;
-    }
-
-    .carousel-caption {
-        bottom: 14% !important;
-        font-size: 0.9rem;
+        max-height: 400px; /* Altura máxima reduzida para tablets */
     }
 
 
@@ -7027,15 +7017,6 @@ fieldset:disabled .btn {
     opacity: 1
 }
 
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 7.0rem;
-    left: 15%;
-    color: #fff;
-    text-align: center;
-    z-index: 1;
-}
 
 .carousel-dark .carousel-control-next-icon,
 .carousel-dark .carousel-control-prev-icon {
