@@ -149,20 +149,17 @@ nav {
 }
 
 .nav__links {
-  position: absolute;
-  right: 1rem;
-  top: 68px;
   width: calc(100% - 2rem);
   max-width: 350px;
-  padding: 2rem;
+  padding: 0;
   list-style: none;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
+  flex-direction: row;
+  gap: 10%;
   background-color: rgba(10, 30, 39, 0.8);
   border-radius: 10px;
-  display: none;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .nav__links.open {
@@ -440,7 +437,7 @@ nav {
   height: 100%;
   background-color: #f8973a;
   align-items: center;
-  z-index: 1;
+  z-index: 11;
   flex-direction: column !important;
 }
 
@@ -449,21 +446,27 @@ nav {
   border-radius: 5px;
   text-align: center;
   max-width: 100%;
-  width: 70%;
   height: 90%;
   overflow-y: scroll;
 }
 
-@media (min-width: 1024px){
+@media (max-width: 1024px){
   .modal-content {
     padding: 0%;
     border-radius: 5px;
     text-align: center;
     max-width: 100%;
-    width: 70%;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--three-color) 2rem);
-    height: 90%;
+    width: 100%;
+    height: 100%;
     overflow-y: scroll;
+  }
+
+  .imgModal {
+    width: 100%;
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 23px;
   }
 }
 
@@ -613,13 +616,14 @@ nav {
 .custom-close-button {
   cursor: pointer;
   position: absolute;
-  top: 2px;
-  right: 6px;
+  top: -17px;
+  right: -9px;
   font-size: 18px;
   background-color: #e9c675;
   border: none;
   color: #ffffff;
   border-radius: 100px;
+  padding: 8px;
 }
 
 .video-container {
@@ -758,4 +762,8 @@ video {
   color: var(--white);
   font-size: 26px;
   color: orange;
+}
+
+.scroll__btn {
+  font-size: 23px;
 }

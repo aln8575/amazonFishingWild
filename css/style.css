@@ -55,16 +55,6 @@
 	padding: 100px 0;
 }
 
-.carousel-item {
-	height: 100vh;
-	min-height: 300px;
-}
-
-.carousel-caption {
-	bottom: 32%;
-	z-index: 2;
-}
-
 .carousel-caption h5 {
 	font-size: clamp(1.5rem, 5vw, 3rem);
 	/* Ajustável para telas pequenas e grandes */
@@ -89,7 +79,7 @@
 	content: '';
 	position: absolute;
 	width: 100%;
-	height: 97%;
+	height: 100%;
 	top: 0;
 	left: 0;
 	background: rgb(0 0 0 / 40%);
@@ -189,9 +179,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	/* .carousel-caption {
-		bottom: 370px;
-	} */
 
 	.carousel-caption p {
 		width: 100%;
@@ -211,10 +198,6 @@
 		text-align: center;
 	}
 
-	/* .carousel-caption {
-		bottom: 125px;
-	} */
-
 	.carousel-caption h5 {
 		font-size: 17px;
 	}
@@ -225,9 +208,9 @@
 	}
 
 	.imgLogo {
-		border-radius: 240px;
-        width: 27%;
-        margin-top: -16px;
+        border-radius: 240px;
+        width: 20%;
+        margin-top: 0px;
 	}
 
 	.carousel-caption p {
@@ -894,7 +877,7 @@ a {
 
 .contactt__col h5 {
 	margin-bottom: 0.5rem;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 600;
 	font-family: var(--header-font);
 }
@@ -958,7 +941,7 @@ a {
 	font-size: 0.8rem;
 	border-top: 1px solid var(--extra-light);
 	color: white;
-	gap: 19px;
+	gap: 2%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1279,10 +1262,6 @@ video {
 	height: auto;
 }
 
-.carousel-caption {
-	font-size: 1rem;
-	padding: 10px;
-}
 
 @media (max-width: 991px) and (min-width: 600px) {
 	.serviceCards {
@@ -1329,10 +1308,6 @@ video {
 		font-size: 1.5rem;
 	}
 
-	.carousel-caption {
-		font-size: 0.8rem;
-
-	}
 
 	.modal-content {
 		width: 90%;
@@ -1364,6 +1339,13 @@ video {
 		flex-direction: column;
 		text-align: center;
 	}
+}
+
+.icon-insta{
+	color: #fff;
+	font-size: 38px;
+	text-decoration: none;
+	transition: color 0.3s ease;
 }
 
 .icon {

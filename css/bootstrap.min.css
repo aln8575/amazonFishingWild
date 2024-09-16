@@ -6835,7 +6835,11 @@ fieldset:disabled .btn {
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: transform .6s ease-in-out
+    transition: transform .6s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Responsividade para tablets */
@@ -6843,7 +6847,7 @@ fieldset:disabled .btn {
     .carousel-item img {
         max-height: 400px; /* Altura máxima reduzida para tablets */
     }
-
+    
     .carousel-inner {
         position: relative;
         width: 100%;
@@ -6856,10 +6860,6 @@ fieldset:disabled .btn {
         font-size: 0.9rem; /* Texto um pouco menor em tablets */
     }
 
-    .carousel-item {
-        height: 46vh!important;
-        min-height: 300px;
-}
 
 .textoCriativo {
     position: relative;
@@ -6868,24 +6868,6 @@ fieldset:disabled .btn {
     -webkit-text-stroke: 0vw rgb(56, 61, 82);
     text-transform: uppercase;
 }
-}
-
-
-/* Responsividade para celulares */
-@media (max-width: 576px) {
-    .carousel-item img {
-        max-height: 315px; /* Altura máxima reduzida para celulares */
-    }
-
-    .carousel-caption {
-        bottom: 10%; /* Ajuste na posição da legenda para dispositivos móveis */
-        font-size: 0.8rem; /* Texto ainda menor para caber em telas pequenas */
-    }
-
-    .carousel-item {
-        height: 53vh!important;
-        min-height: 300px;
-    }
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -7011,9 +6993,9 @@ fieldset:disabled .btn {
     justify-content: center;
     padding: 0;
     margin-right: 15%;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     margin-left: 15%;
-    list-style: none
+    list-style: none;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -7048,12 +7030,11 @@ fieldset:disabled .btn {
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 1.25rem;
+    bottom: 7.0rem;
     left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
     color: #fff;
-    text-align: center
+    text-align: center;
+    z-index: 1;
 }
 
 .carousel-dark .carousel-control-next-icon,
