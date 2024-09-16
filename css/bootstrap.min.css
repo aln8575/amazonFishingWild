@@ -6845,7 +6845,7 @@ fieldset:disabled .btn {
 /* Responsividade para tablets */
 @media (max-width: 768px) {
     .carousel-item img {
-        max-height: 400px; /* Altura máxima reduzida para tablets */
+        max-height: 268px; /* Altura máxima reduzida para tablets */
     }
     
     .carousel-inner {
@@ -6856,8 +6856,8 @@ fieldset:disabled .btn {
     }
 
     .carousel-caption {
-        bottom: 15%; /* Ajuste na posição da legenda em telas menores */
-        font-size: 0.9rem; /* Texto um pouco menor em tablets */
+        bottom: 14% !important;
+        font-size: 0.9rem;
     }
 
 
