@@ -7591,7 +7591,9 @@ fieldset:disabled .btn {
 }
 
 .d-block {
-    display: block !important
+    display: block !important;
+    object-fit: cover;
+    height: 900px;
 }
 
 .d-grid {
