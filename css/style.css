@@ -11,13 +11,11 @@
 }
 
 .textoCriativo {
-	position: relative;
-	font-size: 4vw;
-	/* Mantido responsivo para diferentes larguras de tela */
-	color: #ffffff;
-	-webkit-text-stroke: 0.1vw #383d52;
-	/* Ajustado para variação proporcional */
-	text-transform: uppercase;
+    position: relative;
+    font-size: 3vw;
+    color: #ffffff;
+    -webkit-text-stroke: 0.1vw #383d52;
+    text-transform: uppercase;
 }
 
 
@@ -304,21 +302,40 @@
 }
 
 
-.img-fluid {
-    width: 100%;
-    height: 240px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Media query para telas menores que 991px */
-@media (max-width: 991px) {
-    .serviceCards {
+@media (min-width: 768px) {
+	.serviceCards {
         flex: 0 0 auto;
         width: 100%; /* Ajusta a largura dos cards */
         display: flex;
         flex-direction: column; /* Alinha os cards em coluna */
         align-items: center; /* Centraliza os cards */
+    }
+
+
+	.card {
+        width: 90%; /* Ajusta a largura dos cards para telas menores */
+        margin-bottom: 20px; /* Adiciona espaço entre os cards */
+    }
+
+	
+	.img-fluid {
+		width: 100%;
+        height: 333px;
+        border-radius: 9%;
+        object-fit: cover;
+	}
+}
+
+
+/* Media query para telas menores que 991px */
+@media (max-width: 767px) {
+    .serviceCards {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     .card {
@@ -328,8 +345,8 @@
 
 	.img-fluid {
 		width: 100%;
-		height: 200px;
-		border-radius: 9%;
+		height: 333px;
+		border-radius: 4%;
 		object-fit: cover;
 	}
 }
@@ -338,20 +355,6 @@
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-	.serviceCards {
-        flex: 0 0 auto;
-        width: 100%; /* Ajusta a largura dos cards */
-        display: flex;
-        flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha se necessário */
-        gap: 20px; /* Adiciona espaço entre os cards */
-    }
-
-    .card {
-        width: 100%; /* Ajusta a largura dos cards para caber no contêiner */
-        max-width: 300px; /* Define uma largura máxima para os cards */
-        margin: 0 auto;
-    }
 
 	.aboutSobre {
 		margin-bottom: 40px;
@@ -833,7 +836,6 @@ a {
 	max-width: 100%;
 	width: 80%;
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--primary-color) 2rem);
-	height: 80%;
 	overflow-y: scroll;
 }
 
@@ -1287,26 +1289,6 @@ video {
 }
 
 
-@media (max-width: 991px) and (min-width: 600px) {
-	.serviceCards {
-		flex: 1 0 auto;
-        width: 32%;
-        height: 583px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-	.img-fluid {
-        width: 100%;
-        height: 200px;
-        border-radius: 60%;
-        object-fit: cover;
-    }
-}
 
 @media (max-width: 768px) {
 	.aboutSobre .about-text {
