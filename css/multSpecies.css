@@ -149,8 +149,8 @@ nav {
 }
 
 .nav__links {
-  width: calc(100% - 2rem);
-  max-width: 350px;
+  width: 100%;
+  max-width: 141px;
   padding: 0;
   list-style: none;
   justify-content: center;
@@ -288,9 +288,11 @@ nav {
 .about__content-2 .section__subheader::after {
   content: "02";
 }
-
 .about__content-3 .section__subheader::after {
   content: "03";
+}
+.about__content-4 .section__subheader::after {
+  content: "04";
 }
 
 .about__content p {
