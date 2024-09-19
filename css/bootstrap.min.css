@@ -6840,21 +6840,6 @@ fieldset:disabled .btn {
     height: 100%;
 }
 
-/* Responsividade para tablets */
-@media (max-width: 768px) {
-    .carousel-item img {
-        max-height: 400px; /* Altura máxima reduzida para tablets */
-    }
-
-
-.textoCriativo {
-    position: relative;
-    font-size: 4vw !important;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke: 0vw rgb(56, 61, 82);
-    text-transform: uppercase;
-}
-}
 
 @media (prefers-reduced-motion:reduce) {
     .carousel-item {
