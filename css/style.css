@@ -457,7 +457,7 @@ p.lead {
 @media (min-width: 768px) {
 	.col-md-6 {
 		flex: 0 0 33%;
-		max-width: 100%;
+		max-width: 33%;
 	}
 }
 
