@@ -27,7 +27,6 @@
 	height: 100%;
 	-webkit-text-stroke: 0.1vw #383d52;
 	/* Responsivo para telas menores */
-	border-right: 2px solid #01fe87;
 	overflow: hidden;
 	animation: animate 6s linear infinite;
 	font-family: var(--header-font);
