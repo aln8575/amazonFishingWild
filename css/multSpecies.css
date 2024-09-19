@@ -399,7 +399,7 @@ nav {
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 10rem 2rem;
+    gap: 10rem 10rem;
   }
 
   .about__image-1 {

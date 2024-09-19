@@ -445,7 +445,7 @@ nav {
   flex-direction: column !important;
 }
 
-@media (min-width: 764px){
+@media (min-width: 768px){
   .imgModal {
     width: 100%;
     max-width: 30%;
@@ -476,7 +476,7 @@ nav {
 }
 }
 
-@media (max-width: 763px){
+@media (max-width: 767px){
   .modal-content {
     padding: 5%;
     border-radius: 5px;
