@@ -119,9 +119,11 @@
 	}
 
 	.imgLogo {
-		border-radius: 50%;
-		width: 30%;
-		margin-top: 5px;
+        border-radius: 50%;
+        width: 30%;
+        display: flex;
+        top: 42px;
+        position: relative;
 	}
 }
 
