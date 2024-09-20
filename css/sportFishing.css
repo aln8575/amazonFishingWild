@@ -724,6 +724,14 @@ nav {
   background: #909090;
 }
 
+.price{
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 0 #000000;
+}
+
 .slide_down:hover {
   box-shadow: inset 0 100px 0 0 #000000;
 }
