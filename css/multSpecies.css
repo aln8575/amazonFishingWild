@@ -705,6 +705,14 @@ nav {
   height: 400%;
 }
 
+.price{
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 0 #000000;
+
+}
 
 .button_slide {
   color: black;
@@ -727,7 +735,7 @@ nav {
 }
 
 .slide_right:hover {
-  box-shadow: inset 400px 0 0 0 #000000;
+  box-shadow: inset 400px 0 0 0 #ffffff;
 }
 
 .video-background {

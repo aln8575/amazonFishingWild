@@ -1401,6 +1401,13 @@ video {
 	transition: color 0.3s ease;
 }
 
+.iconWhatsapp{
+	color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
 .icon:hover {
 	color: #4caf50;
 	/* Cor de destaque ao passar o mouse */
