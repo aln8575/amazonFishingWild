@@ -707,11 +707,22 @@ nav {
 
 .price{
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
   text-transform: uppercase;
   box-shadow: inset 0 0 0 0 #000000;
 }
+
+.price span {
+  color: #08ff00; /* Cor inicial (preto) */
+  transition: color 0.3s ease; /* Transição suave */
+}
+
+/* Estilo ao passar o mouse sobre o span */
+.price span:hover {
+  color: #ff6600; /* Cor ao passar o mouse (laranja, por exemplo) */
+}
+
 
 .button_slide {
   color: black;
