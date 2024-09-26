@@ -14,10 +14,18 @@
 @media (min-width: 768px) {
 
 	.textoCriativo {
-        position: relative;
-        font-size: 30px;
-        color: #ffffff;
-        text-transform: uppercase;
+		position: relative;
+		font-size: 50px;
+		color: rgb(183 240 255);
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+
+	.textoCriativos {
+		position: relative;
+		font-size: 17px;
+		color: #ffffff;
+		text-transform: uppercase;
 	}
 }
 
@@ -26,17 +34,26 @@
 
 	.textoCriativo {
 		position: relative;
-		font-size: 5vw;
+		font-size: 8vw;
+		color: rgb(255 255 255);
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+
+	.textoCriativos {
+		position: relative;
+		font-size: 4vw;
 		color: rgb(255, 255, 255);
 		text-transform: uppercase;
 	}
+
 }
 
 
 .textoCriativo::before {
 	content: attr(data-text);
 	position: absolute;
-	top: 0;
+	top: 0px;
 	left: 0;
 	height: 100%;
 	/* Responsivo para telas menores */
@@ -110,17 +127,17 @@
 	}
 
 	.carousel-item img {
-        max-height: 700px;
-        height: 100%;
+		max-height: 700px;
+		height: 100%;
 		/* Altura máxima reduzida para tablets */
 	}
 
 	.imgLogo {
-        border-radius: 50%;
-        width: 30%;
-        display: flex;
-        top: 42px;
-        position: relative;
+		border-radius: 50%;
+		width: 30%;
+		display: flex;
+		top: 42px;
+		position: relative;
 	}
 }
 
@@ -1156,7 +1173,7 @@ a {
 	font-family: var(--header-font);
 }
 
-.textContatoWppAbout{
+.textContatoWppAbout {
 	font-weight: 800;
 	font-family: var(--header-font);
 	color: #4caf50;
@@ -1404,11 +1421,11 @@ video {
 	transition: color 0.3s ease;
 }
 
-.iconWhatsapp{
+.iconWhatsapp {
 	color: #fff;
-    font-size: 40px;
-    text-decoration: none;
-    transition: color 0.3s ease;
+	font-size: 40px;
+	text-decoration: none;
+	transition: color 0.3s ease;
 }
 
 .icon:hover {
@@ -1420,10 +1437,10 @@ video {
 	font-size: 22px;
 }
 
-.numberTel{
+.numberTel {
 	color: white;
 }
 
-.numberTel:hover{
+.numberTel:hover {
 	color: #106eea;
 }
