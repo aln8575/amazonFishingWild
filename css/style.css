@@ -16,7 +16,7 @@
 	.textoCriativo {
 		position: relative;
 		font-size: 50px;
-		color: rgb(255 255 255);
+		color: white;
 		text-transform: uppercase;
 		font-weight: 900;
 	}
@@ -35,7 +35,7 @@
 	.textoCriativo {
 		position: relative;
 		font-size: 8vw;
-		color: rgb(255 255 255);
+		color: white;
 		text-transform: uppercase;
 		font-weight: 900;
 	}
