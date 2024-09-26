@@ -1419,3 +1419,11 @@ video {
 .scroll__btn {
 	font-size: 22px;
 }
+
+.numberTel{
+	color: white;
+}
+
+.numberTel:hover{
+	color: #106eea;
+}
